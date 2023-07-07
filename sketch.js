@@ -1,24 +1,23 @@
-//fruits.
+//silver.
 
 let value;
-let img1,img2,img3,img4,img5,img6,img7,img8,img9;img10;img11;img12;img13;
+let img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13;
 let img;
 
 function preload() {
-  img1 = loadImage("1.jpg");
-  img2 = loadImage("2.jpg");
-  img3 = loadImage("3.jpg");
-  img4 = loadImage("4.jpg");
-  img5 = loadImage("5.jpg");
-  img6 = loadImage("6.jpg");
-  img7 = loadImage("7.jpg");
-  img8 = loadImage("8.jpg");
-  img9 = loadImage("9.jpg");
-  img9 = loadImage("10.jpg");
-  img9 = loadImage("11.jpg");
-  img9 = loadImage("12.jpg");
-  img9 = loadImage("13.jpg");
- 
+  img1 = loadImage("11.jpg");
+  img2 = loadImage("1.jpg");
+  img3 = loadImage("2.jpg");
+  img4 = loadImage("3.jpg");
+  img5 = loadImage("4.jpg");
+  img6 = loadImage("5.jpg");
+  img7 = loadImage("6.jpg");
+  img8 = loadImage("7.jpg");
+  img9 = loadImage("8.jpg");
+  img10 = loadImage("9.jpg");
+  img11 = loadImage("10.jpg");
+  img12 = loadImage("12.jpg");
+  img13 = loadImage("13.jpg");
 }
 
 function setup() {
@@ -34,8 +33,8 @@ function setup() {
     //ios 13 device
     DeviceOrientationEvent.requestPermission()
       .catch(() => {
-        let button = createButton("click to access! <br> and shake it");
-        button.style('font-size', '24px');
+        let button = createButton("click to access <br> and refresh the page <br> then shake it");
+        button.style('font-size', '36px');
         button.mousePressed(requsetAccess);
         button.center();
         throw error;
@@ -120,6 +119,7 @@ function draw() {
   }else if (value == 13){
     img = img13;
   }
+  
   
   background(220);
   image (img,width/2,height/2,width,height);
