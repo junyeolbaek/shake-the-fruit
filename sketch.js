@@ -34,7 +34,7 @@ function setup() {
     //ios 13 device
     DeviceOrientationEvent.requestPermission()
       .catch(() => {
-        let button = createButton("click to access! <br> Do refresh the page and then shake it");
+        let button = createButton("Click to access! <br> Shake it");
         button.style('font-size', '24px');
         button.mousePressed(requsetAccess);
         button.center();
