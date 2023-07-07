@@ -1,7 +1,7 @@
 //fruits.
 
 let value;
-let img1,img2,img3,img4,img5,img6,img7,img8;img9;img10;img11;img12;img13;
+let img1,img2,img3,img4,img5,img6,img7,img8,img9;img10;img11;img12;img13;
 let img;
 
 function preload() {
@@ -14,10 +14,10 @@ function preload() {
   img7 = loadImage("7.jpg");
   img8 = loadImage("8.jpg");
   img9 = loadImage("9.jpg");
-  img10 = loadImage("10.jpg");
-  img11 = loadImage("11.jpg");
-  img12 = loadImage("12.jpg");
-  img13 = loadImage("13.jpg");
+  img9 = loadImage("10.jpg");
+  img9 = loadImage("11.jpg");
+  img9 = loadImage("12.jpg");
+  img9 = loadImage("13.jpg");
  
 }
 
@@ -34,7 +34,7 @@ function setup() {
     //ios 13 device
     DeviceOrientationEvent.requestPermission()
       .catch(() => {
-        let button = createButton("Click to access! <br> Shake it");
+        let button = createButton("click to access! <br> and shake it");
         button.style('font-size', '24px');
         button.mousePressed(requsetAccess);
         button.center();
@@ -111,17 +111,13 @@ function draw() {
     img = img8;
   }else if (value == 9){
     img = img9;
-  }
-  else if (value == 10){
+  }else if (value == 10){
     img = img10;
-  }
-  else if (value == 11){
+  }else if (value == 11){
     img = img11;
-  }
-  else if (value == 12){
+  }else if (value == 12){
     img = img12;
-  }
-  else if (value == 13){
+  }else if (value == 13){
     img = img13;
   }
   
